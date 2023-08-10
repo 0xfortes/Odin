@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Drum Kit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <div class="keys">
+    <div data-key="65" class="key">
+      <kbd>A</kbd>
+      <span class="sound">clap</span>
+    </div>
+    <div data-key="83" class="key">
+      <kbd>S</kbd>
+      <span class="sound">hihat</span>
+    </div>
+    <div data-key="68" class="key">
+      <kbd>D</kbd>
+      <span class="sound">kick</span>
+    </div>
+    <div data-key="70" class="key">
+      <kbd>F</kbd>
+      <span class="sound">openhat</span>
+    </div>
+    <div data-key="71" class="key">
+      <kbd>G</kbd>
+      <span class="sound">boom</span>
+    </div>
+    <div data-key="72" class="key">
+      <kbd>H</kbd>
+      <span class="sound">ride</span>
+    </div>
+    <div data-key="74" class="key">
+      <kbd>J</kbd>
+      <span class="sound">snare</span>
+    </div>
+    <div data-key="75" class="key">
+      <kbd>K</kbd>
+      <span class="sound">tom</span>
+    </div>
+    <div data-key="76" class="key">
+      <kbd>L</kbd>
+      <span class="sound">tink</span>
+    </div>
+  </div>
+
+  <audio data-key="65" src="sounds/clap.wav"></audio>
+  <audio data-key="83" src="sounds/hihat.wav"></audio>
+  <audio data-key="68" src="sounds/kick.wav"></audio>
+  <audio data-key="70" src="sounds/openhat.wav"></audio>
+  <audio data-key="71" src="sounds/boom.wav"></audio>
+  <audio data-key="72" src="sounds/ride.wav"></audio>
+  <audio data-key="74" src="sounds/snare.wav"></audio>
+  <audio data-key="75" src="sounds/tom.wav"></audio>
+  <audio data-key="76" src="sounds/tink.wav"></audio>
+
+<script>
+
+function playSound(e) { 
+  const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`); // selecting the element that has data-key and select it. We use an attribute selector [data-key="${}"] and use backticks to get the corresponding element with the corresponding key
+  const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+  if (!audio) return; // stop the function from running all together
+  audio.currentTime = 0; // rewind the audio to the start, so we if we click multiple times on the same key, will rewind the audio
+  audio.play();
+  key.classList.add('playing'); // we also have .remove and .toggle. Here, we add the .playing styles defined on the css file and apply it to the key class. So when we press a key, it will update the theme of the borders, colors, etc
+};
+
+function removeTransition(e) {
+  if (e.propertyName !== 'transform') return;
+  e.target.classList.remove('playing'); 
+}
+
+const keys = Array.from(document.querySelectorAll('.key')); // We need to convert to array. Because document.queryselectorall returns a nodelist. Nodelist are not arrays. So we need array in order to access it's objects
+keys.forEach(key => key.addEventListener('transitionend', removeTransition)); // each key gets an eventlistener added to it, and when that transition is ending we will remove it
+                                                                              // we need this forEach, because queryselectorall returns an array of elements (nested childs) and we need to iterate through all of them for the transition to happen and to remove it aswell
+window.addEventListener('keydown', playSound)
+
+</script>
+
+
+
+</body>
+</html>
