@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background-color: #1F2937;
+    padding: 1em 13em;
+}
+
+.logo {
+    color: #f9faf8;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.links ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+a:link {
+    text-decoration: none;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+
+/*Block 1*/
+
+.block1 {
+    padding: 5em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10em;
+}
+
+.block1-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image {
+    flex-shrink: 0;
+    width: 50%;
+}
+
+#img {
+    border-radius: 8px;
+    width: 100%;
+}
+
+.block1-header {
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.block1-subheader {
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+.block1-button {
+    background-color: #3882F6;
+    border-radius: 8px;
+    width: 130px;
+    height: 40px;
+    color: #f9faf8;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*Block 2 where the boxes goes */
+
+#subtext {
+    margin: auto;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+    margin-top: 2em;
+}
+
+#subtext2 {
+    font-weight: bold;
+    color: brown;
+}
+
+.block2 {
+    display: flex;
+    text-align: center;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    padding: 0 13em;
+}
+
+img {
+    width: 30%;
+}
+
+/* Block 3 - quote section */
+
+.block3 {
+
+    background-color: #E5E7EB;
+    padding: 7em 13em;
+}
+
+.block3 em {
+    font-size: 36px;
+    font-weight: 100;
+    color: #1f2937;
+    text-align: center;
+}
+
+.block3 p {
+    font-weight: bold;
+    font-size: 24px;
+    color:#1f2937;
+    text-align: end;
+}
+
+/*block 4 - Signup section */
+
+.block4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em 12em;
+}
+
+strong {
+    font-size: 24px;
+    color: #FFF;
+}
+
+.textbox p {
+    color: #FFF;
+}
+
+.container3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3882F6;
+    padding: 4em;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.container3 button {
+    border: 2px solid #FFF;
+    border-radius: 8px;
+    background-color: #3882F6;
+    color: #FFF;
+    font-size: 20px;
+    padding: 5px 20px;
+}
+
+/*footer styling*/
+
+footer {
+    display: flex;
+    background-color: #1F2937;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0em;
+    color: #FFF;
+}

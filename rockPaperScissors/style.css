@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header > h1  {
+    background-color: brown;
+    text-align: center;
+    padding: 10px;
+    color:aliceblue;
+}
+
+#title {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+body {
+    background-color: grey;
+}
+
+.weapon {
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: brown;
+    padding-top: 20px;
+}
+
+.cards {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.card {    
+    display: inline-block;
+    border: 4px solid brown;
+    border-radius: 60%;
+    padding: 10px;
+    margin: 0 20px;
+}
+
+.card:hover {
+    cursor: pointer;
+    background: brown;
+
+}
+
+.message {
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+.scoremsg {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 20px auto;
+    border-radius: 3px;
+    text-align: center;
+    width: 200px;
+}
+
+.playerscore {
+    padding-right: 24px;
+}
+
+.resultmsg {
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+#text {
+    background-color: brown;
+    padding: 15px 32px;
+    border: none;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
