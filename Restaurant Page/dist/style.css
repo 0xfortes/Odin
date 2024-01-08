@@ -1,0 +1,116 @@
+
+body {
+background-color: #000;
+color: #fff;
+font-family: 'Arial', sans-serif;
+margin: 0;
+padding: 0;
+}
+
+header {
+padding: 20px;
+text-align: center; /* Center the content within the header */
+}
+
+header h1 {
+color: #ff5a00;
+margin: 0;
+font-size: 2em;
+font-family: 'Orbitron', sans-serif;
+letter-spacing: 5px;
+}
+
+nav {
+margin-top: 10px;
+text-align: center; /* Center the navigation links */
+font-family: 'Orbitron', sans-serif;
+}
+
+.tab {
+cursor: pointer;
+padding: 10px;
+margin: 5px;
+display: inline-block;
+background-color: #ff5a00; /* Cyberpunk orange */
+border-radius: 5px;
+box-shadow: 0 0 10px #ff5a00; /* Neon glow */
+transition: box-shadow 0.3s ease;
+}
+
+.tab:hover {
+box-shadow: 0 0 20px #ff5a00; /* Neon glow on hover */
+}
+
+main {
+padding: 20px;
+text-align: center; /* Center the content within the main area */
+}
+
+main img {
+max-width: 50%;
+height: auto;
+display: block;
+margin: 0 auto;
+border-radius: 10px;
+box-shadow: 0 0 20px #ff5a00; /* Neon glow */
+}
+
+footer {
+padding: 10px;
+text-align: center; /* Center the content within the footer */
+bottom: 0;
+width: 100%;
+left: 0;
+max-width: 100%;
+font-family: 'Orbitron', sans-serif;
+}
+
+.menu-container {
+padding: 20px;
+background-color: #1a1a1a; /* Dark gray background for menu page */
+text-align: center; /* Center the content within the menu container */
+box-shadow: 0 0 20px #ff5a00; /* Neon glow */
+border-radius: 10px;
+margin-top: 20px;
+font-family: 'Orbitron', sans-serif;
+}
+
+.menu-list {
+list-style-type: none;
+padding: 0;
+}
+
+.menu-list li {
+margin: 10px 0;
+font-size: 1.2em;
+}
+
+/* Apply cyberpunk colors to menu elements */
+.cyberpunk-orange {
+color: #ff5a00;
+}
+
+.cyberpunk-green {
+color: #6aff6a;
+}
+
+
+.contact-container {
+padding: 20px;
+background-color: #1a1a1a; /* Dark gray background for contact page */
+text-align: center; /* Center the content within the contact container */
+box-shadow: 0 0 20px #ff5a00; /* Neon glow */
+border-radius: 10px;
+margin-top: 20px;
+font-family: 'Orbitron', sans-serif;
+}
+
+/* Apply cyberpunk colors to contact elements */
+.contact-container h2 {
+color: #ff5a00; /* Cyberpunk orange */
+}
+
+.contact-container p {
+color: #6aff6a; /* Cyberpunk green */
+}
+
