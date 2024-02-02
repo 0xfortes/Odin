@@ -1,0 +1,86 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  color: #fff;
+}
+
+#app-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+#project-container, #selected-project-name, #todo-list-container, #form-container {
+  width: 30%;
+}
+
+#todo-list-title {
+  text-align: center;
+  color: #ffffff; /* Purple */
+}
+
+#todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+#todo-list li {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #1a1a1a;
+}
+
+#form-container, #project-container {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+input, textarea, select {
+  margin-bottom: 10px;
+  padding: 8px;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #ffffff; /* Purple */
+}
+
+button {
+  background-color: #fcfcfc; /* Purple */
+  color: #111;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f5f5f5; /* Darker Purple */
+}
+
+#delete-project {
+  background-color: #f5f5f5;
+  margin-top: 10px;
+}
+
+#delete-project:hover {
+  background-color: #cc0000;
+}
+
+.error-message {
+  color: #ff3333;
+  margin-top: 10px;
+  display: none;
+}
