@@ -1,0 +1,31 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    width: 200px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
